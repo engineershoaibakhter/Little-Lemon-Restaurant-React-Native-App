@@ -1,21 +1,23 @@
 import {View, Text,Image, StyleSheet, Platform } from 'react-native';
+import Header from '../../components/LemonHeader'
 
 
 
 export default function HomeScreen() {
   return (
     <>
-    <View style={styles.heading}>
-      <Text>Shoaib</Text>
+    <View style={styles.header}>
+      <Header />
     </View>
     </>
   );
 }
 
 const styles = StyleSheet.create({
-heading:{
-  justifyContent:"center",
-  alignItems:"center",
-  flex:8
-}
+  header:{
+    flex:1,
+    marginTop:40,
+alignItems:"center",
+
+  }
 });
