@@ -1,34 +1,50 @@
 import {View, Text,Image, StyleSheet, Platform } from 'react-native';
 import Header from '../../components/LemonHeader'
 import Footer from '../../components/Footer'
-
+import MenuItem from '../../components/MenuItem';
 
 export default function HomeScreen() {
   return (
     <>
-    <View>
+    {/* <View>
       <Header />
     </View>
-    <View style={styles.content}>
-      <Text style={{textAlign:"center",fontSize:30,color:"white"}}>Welcome to Lemon Restaurant</Text>
-      <Text style={{textAlign:"center",color:"white",fontSize:20,marginVertical:60,backgroundColor:"red"}} numberOfLines={4}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magni hic excepturi nam facere commodi officia est fugiat vitae nisi, nulla, optio dignissimos, incidunt architecto sapiente? Porro deleniti magni inventore!</Text>
-    </View>
+    <View
+        style={{
+          flex: 1,
+          backgroundColor: '#495E57',
+        }}>
+            <MenuItem />
+
+      </View>
+    
     <View style={styles.footer}>
       <Footer />
+    </View> */}
+
+<View
+      style={{
+        flexDirection: "row",
+        height: 100,
+        padding: 20
+      }}
+    >
+      <View style={{ backgroundColor: "blue", flex: 0.5 }} />
+      <View style={{ backgroundColor: "red", flex: 0.3 }} />
     </View>
     </>
   );
 }
 
 const styles = StyleSheet.create({
-  content:{
-    paddingTop:30,
-    backgroundColor:"green",
-    
-  },
+  // content:{
+  //   paddingTop:30,
+  //   backgroundColor:"green",
+  //   flex:1
+  // },
   footer:{
    justifyContent:"flex-end",
-   flex:1,
+   flex:0.25,
    backgroundColor:"green"
   }
 });
