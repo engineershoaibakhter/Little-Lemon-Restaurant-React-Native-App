@@ -6,7 +6,7 @@ import MenuItem from '../../components/MenuItem';
 export default function HomeScreen() {
   return (
     <>
-    {/* <View>
+    <View>
       <Header />
     </View>
     <View
@@ -20,17 +20,6 @@ export default function HomeScreen() {
     
     <View style={styles.footer}>
       <Footer />
-    </View> */}
-
-<View
-      style={{
-        flexDirection: "row",
-        height: 100,
-        padding: 20
-      }}
-    >
-      <View style={{ backgroundColor: "blue", flex: 0.5 }} />
-      <View style={{ backgroundColor: "red", flex: 0.3 }} />
     </View>
     </>
   );
