@@ -2,6 +2,7 @@ import {View, Text,Image, StyleSheet, Platform } from 'react-native';
 import Header from '../../components/LemonHeader'
 import Footer from '../../components/Footer'
 import MenuItem from '../../components/MenuItem';
+import FeedbackForm from '../../components/FeedbackForm';
 
 export default function HomeScreen() {
   return (
@@ -21,6 +22,7 @@ export default function HomeScreen() {
     <View style={styles.footer}>
       <Footer />
     </View>
+    <FeedbackForm />
     </>
   );
 }
