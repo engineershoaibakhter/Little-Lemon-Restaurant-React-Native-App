@@ -12,7 +12,7 @@ export default function HomeScreen() {
     <View
         style={{
           flex: 1,
-          backgroundColor: '#495E57',
+          backgroundColor: '#333333',
         }}>
             <MenuItem />
 
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   // },
   footer:{
    justifyContent:"flex-end",
-   flex:0.25,
-   backgroundColor:"green"
+   flex:0,
+   backgroundColor:"#333333"
   }
 });

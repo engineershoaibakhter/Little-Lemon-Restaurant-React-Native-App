@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 alignItems:"center",
 paddingTop:35,
 paddingBottom:20,
-backgroundColor:"orange"
+backgroundColor:"#EE9972"
   },
   heading:{
 fontSize:25,
