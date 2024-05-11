@@ -10,19 +10,19 @@ export default function HomeScreen() {
     <View>
       <Header />
     </View>
-    <View
+    {/* <View
         style={{
           flex: 1,
           backgroundColor: '#333333',
         }}>
             <MenuItem />
 
-      </View>
+      </View> */}
+    <FeedbackForm />
     
     <View style={styles.footer}>
       <Footer />
     </View>
-    <FeedbackForm />
     </>
   );
 }
