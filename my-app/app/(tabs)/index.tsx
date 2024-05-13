@@ -1,13 +1,17 @@
-import {View, Text,Image, StyleSheet, Platform } from 'react-native';
+import {View,useColorScheme,useWindowDimensions, Text,Image, StyleSheet, Platform } from 'react-native';
 import Header from '../../components/LemonHeader'
 import Footer from '../../components/Footer'
 import MenuItem from '../../components/MenuItem';
 import FeedbackForm from '../../components/FeedbackForm';
 
 export default function HomeScreen() {
+  const colorScheme=useColorScheme();
+  // const {height,widht,fontScale}=useWindowDimensions();
+  const window=useWindowDimensions();
+
   return (
     <>
-    <View>
+    <View >
       <Header />
     </View>
     {/* <View
@@ -20,8 +24,12 @@ export default function HomeScreen() {
       </View> */}
     <FeedbackForm />
     
-    <View style={styles.footer}>
+    <View style={[styles.footer, colorScheme === 'light'? {backgroundColor:"yellow"}:{backgroundColor:"black"}]}>
       <Footer />
+      <Text>Windows Dimension</Text>
+      <Text>Height: {window.height}</Text>
+      <Text>Height: {window.width}</Text>
+      <Text>Height: {window.fontScale}</Text>
     </View>
     </>
   );

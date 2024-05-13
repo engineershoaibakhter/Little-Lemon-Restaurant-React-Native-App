@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, ScrollView,KeyboardAvoidingView, Platform,Pressable } from "react-native";
+import { StyleSheet, Text, View, TextInput,Image, ScrollView,KeyboardAvoidingView, Platform,Pressable } from "react-native";
 import React from "react";
 
 const FeedbackForm = () => {
@@ -11,7 +11,10 @@ const FeedbackForm = () => {
     <ScrollView >
         <KeyboardAvoidingView behavior={Platform.OS==="ios"?"padding":"height"}>
       <Text style={{textAlign:"center",fontSize:20}}>How was your visit to Little Lemon? </Text>
-      
+      <View style={{height:200,width:200}}>
+
+      <Image resizeMode="contain"  source={require('../assets/images/partial-react-logo.png')}></Image>
+      </View>
       <Pressable onPress={()=>{setContact(!showContact)}}>
     <Text style={{textAlign:"center",fontSize:30,backgroundColor:"red",color:"yellow",marginHorizontal:30,borderRadius:20,marginVertical:20}}>
       {showContact? "Contact US":"Show Contact US"} 
